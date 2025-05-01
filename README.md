@@ -1,2 +1,2 @@
-# hyprland-dots
+# Hyprland-Dots
 My Hyprland Dots

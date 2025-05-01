@@ -29,16 +29,14 @@ echo "Installing AUR packages with yay..."
 sudo -u "$ORIGINAL_USER" yay -S --noconfirm thorium-browser-bin tofi wlogout grimblast kvantum-theme-catppuccin-git
 
 # ---- Copy file to user's home directory ----
-echo "Copying config file to $USER_HOME"
-sudo cp ./myfile.conf "$USER_HOME/.config/myfile.conf"
-sudo chown "$ORIGINAL_USER:$ORIGINAL_USER" "$USER_HOME/.config/myfile.conf"
+sudo chown "$ORIGINAL_USER:$ORIGINAL_USER" "/home/ORIGINALUSER/.config/myfile.conf"
 
 
 sudo tar -xvf /home/$ORIGINAL_USER/hypr-dots/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
 sudo tar -xvf /home/$ORIGINAL_USER/hypr-dots/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
-cp -r /home/$ORIGINAL_USER/hypr-dots/assets/BG/ /home/$ORIGINAL_USER/Pictures/
-cp -r /home/$ORIGINAL_USER/hypr-dots/config/* /home/$ORIGINAL_USER/.config
-sudo chown -R $ORIGINAL_USER /home/$ORIGINAL_USER/*
+sudo cp -r /home/$ORIGINAL_USER/hypr-dots/assets/BG/ /home/$ORIGINAL_USER/Pictures/
+sudo cp -r /home/$ORIGINAL_USER/hypr-dots/config/* /home/$ORIGINAL_USER/.config
+sudo chown "$ORIGINAL_USER:$ORIGINAL_USER" "/home/ORIGINALUSER/.config/*
 #
 echo "DONE"
 echo "run 'nwg-look' and set GTK and Icon Theme"

@@ -2,4 +2,4 @@
 My Hyprland Dots <br>
 Arch only bruh
 
-[Original Rice](github.com/gaurav23b/simple-hyprland)
+[Original Rice](https://github.com/gaurav23b/simple-hyprland)

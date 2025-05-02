@@ -29,14 +29,14 @@ echo "Installing AUR packages with yay..."
 sudo -u "$ORIGINAL_USER" yay -S --noconfirm thorium-browser-bin tofi wlogout grimblast kvantum-theme-catppuccin-git
 
 # ---- Copy file to user's home directory ----
-sudo chown "$ORIGINAL_USER:$ORIGINAL_USER" "/home/ORIGINALUSER/.config/myfile.conf"
+#sudo chown $ORIGINAL_USER /home/ORIGINALUSER/.config/
 
 
 sudo tar -xvf /home/$ORIGINAL_USER/hypr-dots/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
 sudo tar -xvf /home/$ORIGINAL_USER/hypr-dots/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
 sudo cp -r /home/$ORIGINAL_USER/hypr-dots/assets/BG/ /home/$ORIGINAL_USER/Pictures/
 sudo cp -r /home/$ORIGINAL_USER/hypr-dots/config/* /home/$ORIGINAL_USER/.config
-sudo chown "$ORIGINAL_USER:$ORIGINAL_USER" /home/$ORIGINALUSER/.config/*
+sudo chown "$ORIGINAL_USER" /home/$ORIGINALUSER/.config/*
 #
 echo "DONE"
 echo "run 'nwg-look' and set GTK and Icon Theme"

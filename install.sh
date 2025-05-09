@@ -12,3 +12,8 @@ sudo tar -xvf /home/$SUDO_USER/hypr-dots/assets/icons/Tela-circle-dracula.tar.xz
 systemctl --user enable pipewire pipewire-pulse wireplumber --now 
 
 cp -r /home/$USER/hypr-dots/config/* /home/$USER/.config/
+
+mkdir -p ~/Pictures/walls/
+git clone https://github.com/orangci/walls-catppuccin-mocha.git ~/Pictures/walls/catppuccin
+
+echo "DONE"

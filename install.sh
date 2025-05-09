@@ -9,4 +9,6 @@ xdg-user-dirs-update
 sudo tar -xvf /home/$SUDO_USER/hypr-dots/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
 sudo tar -xvf /home/$SUDO_USER/hypr-dots/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
 
+systemctl --user enable pipewire pipewire-pulse wireplumber --now 
+
 cp -r /home/$USER/hypr-dots/config/* /home/$USER/.config/

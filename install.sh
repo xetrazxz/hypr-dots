@@ -10,4 +10,3 @@ sudo tar -xvf /home/$SUDO_USER/hypr-dots/assets/themes/Catppuccin-Mocha.tar.xz -
 sudo tar -xvf /home/$SUDO_USER/hypr-dots/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
 
 cp -r /home/$USER/hypr-dots/config/* /home/$USER/.config/
-fish_config theme save "Catppuccin Mocha"

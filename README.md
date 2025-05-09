@@ -21,4 +21,3 @@ chmod +x install.sh
 ```bash
 fish_config theme save "Catppuccin Mocha"
 ```
-[Original Rice](https://github.com/gaurav23b/simple-hyprland)

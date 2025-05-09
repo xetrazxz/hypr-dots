@@ -8,8 +8,9 @@ git clone https://aur.archlinux.org/yay.git ~/yay
 cd ~/yay
 makepkg -si
 cd ~/
+```
 
-#Installation
+## Installation
 ```bash
 git clone https://github.com/xetrazxz/hypr-dots.git ~/hypr-dots
 cd ~/hypr-dots

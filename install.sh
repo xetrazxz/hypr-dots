@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 cd "$(dirname "$0")"
+XUSER=$USER
 # Install official packages
 echo "Installing system packages..."
 sudo pacman -S --noconfirm \
@@ -37,14 +38,14 @@ CONFIG_SRC="/home/$USER/hypr-dots/config"
 cp -r "$CONFIG_SRC"/* "/home/$USER/.config/"
 
 # Clone wallpapers
-mkdir -p /home/$SUDO_USER/Pictures/walls/"
+mkdir -p /home/$USER/Pictures/walls/"
 echo "Setting up wallpapers..."
-WALLPAPER_DIR="/home/$SUDO_USER/Pictures/walls/catppuccin"
-sudo -u "$SUDO_USER" git clone https://github.com/orangci/walls-catppuccin-mocha.git "$WALLPAPER_DIR"
+WALLPAPER_DIR="/home/$USER/Pictures/walls/catppuccin"
+git clone https://github.com/orangci/walls-catppuccin-mocha.git "$WALLPAPER_DIR"
 
 
-sudo chown -R $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config/
-sudo chown -R $SUDO_USER:$SUDO_USER /home/$SUDO_USER/Pictures/walls/catppuccin
+sudo chown -R $XUSER:$XUSER /home/$XUSER/.config/
+sudo chown -R $XUSER:$XUSER /home/$XUSER/Pictures/walls/catppuccin
 
 
 

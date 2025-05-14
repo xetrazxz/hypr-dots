@@ -3,7 +3,7 @@ cd "$(dirname "$0")"
 echo "USERNAME"
 read $USER
 # Install official packages
-sudo pacman -S --noconfirm xdg-user-dirs foot hyprland swww hyprlock hyprpicker dunst waybar fish tar nvim xdg-desktop-portal-hyprland qt5-wayland qt6-wayland cliphist
+sudo pacman -S --noconfirm xdg-user-dirs foot hyprland swww hyprlock hyprpicker hyprpolkitagent dunst waybar fish tar nvim xdg-desktop-portal-hyprland qt5-wayland qt6-wayland cliphist
   
 sudo pacman -S  --noconfirm pipewire wireplumber pipewire-audio brightnessctl noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono nwg-look kvantum yazi fastfetch
 

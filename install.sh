@@ -5,7 +5,7 @@ read $USER
 # Install official packages
 sudo pacman -S --noconfirm xdg-user-dirs foot hyprland swww hyprlock hyprpicker dunst waybar fish tar nvim xdg-desktop-portal-hyprland qt5-wayland qt6-wayland cliphist
   
-sudo pacman -S  --noconfirm pipewire wireplumber pipewire-audio brightnessctl ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono nwg-look qt5ct qt6ct kvantum yazi fastfetch
+isudo pacman -S  --noconfirm pipewire wireplumber pipewire-audio brightnessctl ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono nwg-look kvantum yazi fastfetch
 
 yay -S --noconfirm thorium-browser-bin tofi wlogout grimblast kvantum-theme-catppuccin-git
 
